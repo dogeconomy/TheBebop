@@ -43,45 +43,48 @@ https://raw.githubusercontent.com/dogeconomy/TheBebop/main/README.md
 //
 //                                             _____[U/L]_____
 //     -------------------------               | add file to |
-//     |   [Bebop Webserver]   |          _____|    ipfs     |----|-------------------------------|
-//     ------------------------|         |     |_____^_______|    |                               |
-//                             |_________|_________  |   =========|==================             |
-//                             | Client Web Files | U/L //  if no encryption skip   \\            |
-//                             |_(recursive scan__|--|--\\    to storing to ipfs     \\           |
-//                                                   |   \\===========================\\          |
-//                                                   |                                 \\         |
-//                                                   |   ======================        |=====================| (or) |---------------------------|
-//                                                   |   |[Encryption Process]|  --->  | Store Data to IPFS  | ---> | Store as encrypted object |
-//                                                   |   ======(optional)======        |   (non encrypted!)  | (if) | encrypted                 |
-//                                                   |         ^(maybe?)^              ===========||==========      |----------------|----------|
-//                                                   |             ||                -------------\/---------              ||   _____|__________|______________________
-//                                                   |------------//\\--------------|[ | Create a data index:]|            ||  | So encrypt the data and then add the |
-//                                                                 || (if encrypted)|[ |  address,filename,  ]|            \/  |        encrypted data to IPFS        |
-//                                                                 ||     <-- <-----|[-| filetype, password, ]|____________||  |--------------------------------------|
-//                                                                 | (option chosen)|[   directory/location, ]|_____________|  
-//                                                                 |----------------|[   creator md5 maybe?  ]|                
-//                                                                                  --------------||-----------                
-//                                   |------------------|                                         ||                           
-//                                   |    IPFSWWW Dir   |                           |=============\/============|              
-//                                   |------------------|                           | Store into IPFS Database! |
-//                                   |                  |                           |---------------------------|
-//                                   |                  |                           | IPFS database will work   |
-//                                   |                  |                           | how it sounds, a database |
-//                                   |__________________|                           | which works off of the    |
-//                                                                                  | IPFS network, storing and |
-//                                                                                  | retrieving data           |
-//                                                                                  |-------------||------------|
-//                                                                                                || 
-//                                                                                                || 
-//                                                                                  |-------------\/----------------|
-//                                                                                  | todo todo                     |__
-//                                                                                  |---------------------------------|
-//                                                                                  | lorum ipsum, still a thought    |
-//                                                                     <-- <-- <--  | in progress, this is just some  |
-//                                                                                  | useless text to fill up my cool |
-//                                                                                  | asii text box I spent entirely  |
-//                                                                                  | too much time on!               |
-//                                                                                  | --------------------------------|
+//     |   [Bebop Webserver]   |          _____|    ipfs     |----|------------------------------|
+//     ------------------------|         |     |_____^_______|    |                              |
+//                            |_________|_________  |   =========|==================             |
+//                            | Client Web Files | U/L //  if no encryption skip   \\            |
+//                            |_(recursive scan__|--|--\\    to storing to ipfs     \\           |
+//                                                  |   \\===========================\\          |
+//                                                  |                                 \\         |
+//                                |   ======================        |=====================| (or) |---------------------------|
+//                                |   |[Encryption Process]|  --->  | Store Data to IPFS  | ---> | Store as encrypted object |
+//                                |   ======(optional)======        |   (non encrypted!)  | (if) | encrypted                 |
+//                                |         ^(maybe?)^              ===========||==========      |----------------|----------|
+//                                |             ||                -------------\/---------              ||   _____|__________|______________________
+//                                |------------//\\--------------|[ | Create a data index:]|            ||  | So encrypt the data and then add the |
+//                                              || (if encrypted)|[ |  address,filename,  ]|            \/  |        encrypted data to IPFS        |
+//                                              ||     <-- <-----|[-| filetype, password, ]|____________||  |--------------------------------------|
+//                                              | (option chosen)|[   directory/location, ]|_____________|  
+//                                              |----------------|[   creator md5 maybe?  ]|                
+//                                                             --------------||-----------                
+//              |------------------|                                         ||                           
+//              |    IPFSWWW Dir   |                           |=============\/============|              
+//              |------------------|                           | Store into IPFS Database! |
+//              |                  |                           |---------------------------|
+//              |                  |                           | IPFS database will work   |
+//              |                  |                           | how it sounds, a database |
+//              |__________________|                           | which works off of the    |
+//                                                             | IPFS network, storing and |
+//                                                             | retrieving data           |
+//                                                             |-------------||------------|
+//                                                                           || 
+//                                                                           || 
+//                                                             |-------------\/----------------|
+//                                                             | todo todo                     |__
+//                                                             |---------------------------------|
+//                                                             | lorum ipsum, still a thought    |
+//                                                <-- <-- <--  | in progress, this is just some  |
+//                                                             | useless text to fill up my cool |
+//                                                             | asii text box I spent entirely  |
+//                                                             | too much time on!               |
+//                                                             | --------------------------------|
+// 
+// 
 // Create ipfs webserver on port 80
+//
 // Create ipfs webserver on port 443
 
