@@ -43,18 +43,18 @@ https://raw.githubusercontent.com/dogeconomy/TheBebop/main/README.md
 //
 //                                             _____[U/L]_____
 //     -------------------------               | add file to |
-//     |   [Bebop Webserver]   |          _____|    ipfs     |----|------------------------------|
-//     ------------------------|         |     |_____^_______|    |                              |
-//                            |_________|_________  |   =========|==================             |
-//                            | Client Web Files | U/L //  if no encryption skip   \\            |
-//                            |_(recursive scan__|--|--\\    to storing to ipfs     \\           |
-//                                                  |   \\===========================\\          |
-//                                                  |                                 \\         |
+//     |   [Bebop Webserver]   |         ______|    ipfs     |----|------------------------------|
+//     ------------------------|        |      |_____^_______|    |                              |
+//                            |_________|_________   |  ==========|==================            |
+//                            | Client Web Files |  U/L //  if no encryption skip  ||            |
+//                            |_(recursive scan__|--|-- \\    to storing to ipfs   ||            |
+//                                                  |   \\=========================||            |
+//                                                  |                                            |
 //                                |   ======================        |=====================| (or) |---------------------------|
 //                                |   |[Encryption Process]|  --->  | Store Data to IPFS  | ---> | Store as encrypted object |
 //                                |   ======(optional)======        |   (non encrypted!)  | (if) | encrypted                 |
 //                                |         ^(maybe?)^              ===========||==========      |----------------|----------|
-//                                |             ||               ----------------\/---------            ||   _____|__________|______________________
+//                                |             ||                 ------------\/----------             ||   _____|__________|______________________
 //                                |------------//\\--------------|[ | Create a data index:]|            ||  | So encrypt the data and then add the |
 //                                              || (if encrypted)|[ |  address,filename,  ]|            \/  |        encrypted data to IPFS        |
 //                                              ||     <-- <-----|[-| filetype, password, ]|____________||  |--------------------------------------|
