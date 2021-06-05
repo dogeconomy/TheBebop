@@ -54,13 +54,13 @@ https://raw.githubusercontent.com/dogeconomy/TheBebop/main/README.md
 //                                |   |[Encryption Process]|  --->  | Store Data to IPFS  | ---> | Store as encrypted object |
 //                                |   ======(optional)======        |   (non encrypted!)  | (if) | encrypted                 |
 //                                |         ^(maybe?)^              ===========||==========      |----------------|----------|
-//                                |             ||                -------------\/---------              ||   _____|__________|______________________
+//                                |             ||               ----------------\/---------            ||   _____|__________|______________________
 //                                |------------//\\--------------|[ | Create a data index:]|            ||  | So encrypt the data and then add the |
 //                                              || (if encrypted)|[ |  address,filename,  ]|            \/  |        encrypted data to IPFS        |
 //                                              ||     <-- <-----|[-| filetype, password, ]|____________||  |--------------------------------------|
 //                                              | (option chosen)|[   directory/location, ]|_____________|  
 //                                              |----------------|[   creator md5 maybe?  ]|                
-//                                                             --------------||-----------                
+//                                                               ------------||-------------               
 //              |------------------|                                         ||                           
 //              |    IPFSWWW Dir   |                           |=============\/============|              
 //              |------------------|                           | Store into IPFS Database! |
