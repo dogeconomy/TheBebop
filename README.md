@@ -3,6 +3,10 @@ A means of hosting data over the web offering potentially less security risk and
 ------------------------------------
 Idea Board / Overall Goal Board
 ------------------------------------
+[Please use raw link for proper formatting]
+https://raw.githubusercontent.com/dogeconomy/TheBebop/main/README.md
+
+
 // Create server which can host https on 443 and http on 80
 
 // Bebop will host files served via ipfs in a webserver fashion
