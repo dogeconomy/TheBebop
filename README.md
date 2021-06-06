@@ -1,3 +1,10 @@
+// These are some ideas/goals jotted down by myself in hopes to create a better internet for tomorrow!
+// For best viewing and proper format, please view the **RAW** format here:
+// https://raw.githubusercontent.com/dogeconomy/TheBebop/main/README.md
+//
+// Please feel free to comment and contribute any thoughts, ideas, etc.. this may have spawned.
+// Always down to listen to new ideas and perspectives.
+// 
 // Create server which can host https on 443 and http on 80
 
 // Bebop will host files served via ipfs in a webserver fashion
